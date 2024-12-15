@@ -1,10 +1,9 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Luong Quy Tuan- CV</title>
+  <title>Luong Quy Tuan - CV</title>
   <style>
     /* CSS cho việc căn giữa */
     .container {
@@ -13,6 +12,7 @@
       align-items: center; /* Canh giữa theo chiều dọc */
       height: 100vh; /* Chiều cao chiếm toàn bộ màn hình */
       background-color: #f4f4f4;
+      flex-direction: column; /* Sắp xếp dọc */
     }
 
     /* CSS cho hình ảnh */
@@ -21,6 +21,17 @@
       border-radius: 1px; /* Góc bo tròn */
       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Đổ bóng */
       max-width: 300px; /* Đặt chiều rộng tối đa */
+      margin-bottom: 20px; /* Khoảng cách dưới hình ảnh */
+    }
+
+    /* CSS cho video */
+    .video {
+      max-width: 100%; /* Video không vượt quá chiều rộng của container */
+      max-height: 60vh; /* Đảm bảo video không vượt quá 60% chiều cao màn hình */
+      width: auto; /* Giữ nguyên tỷ lệ khi điều chỉnh */
+      height: auto; /* Giữ nguyên tỷ lệ khi điều chỉnh */
+      border: 1px solid #ccc; /* Khung video */
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Đổ bóng */
     }
   </style>
 </head>
@@ -28,6 +39,11 @@
   <!-- Container bao quanh để căn giữa -->
   <div class="container">
     <img src="Lương Quý Tuấn-JAVA.jpg" alt="Hình ảnh minh họa" class="image">
+    <!-- Thêm video -->
+    <video class="image" controls>
+      <source src="Bank App - Brave 2024-10-31 22-04-15.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
   </div>
 </body>
 </html>
